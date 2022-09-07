@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>america</title>
+</head>
+<body>
+<input type="text" name="inputtxt" id="inputtxt">
+<button onclick="cardnumber()">click</button>
+<script>
+function cardnumber(inputtxt)
+{
+  var inputtxt=document.getElementById("inputtxt");
+  var cardno = /^(?:3[47][0-9]{13})$/;
+  if(inputtxt.value.match(cardno))
+     {
+      return true;
+     }
+     else
+     {
+        alert("Not a valid Amercican Express credit card number!");
+        return false;
+      }
+}
+</script>
+</body>
+</html>
